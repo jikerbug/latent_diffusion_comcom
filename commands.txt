@@ -1,0 +1,14 @@
+model_path = "/models/ldm/text2img-large"
+outputs_path = "/content/outputs"
+os.system(f"mkdir -p {model_path}")
+os.system(f'mkdir -p {outputs_path}')
+
+
+git clone https://github.com/crowsonkb/latent-diffusion.git
+git clone https://github.com/CompVis/taming-transformers
+pip install -e ./taming-transformers
+pip install omegaconf>=2.0.0 pytorch-lightning>=1.0.8 torch-fidelity einops
+pip install transformers
+pip install open_clip_torch
+pip install autokeras
+pip install tensorflow
