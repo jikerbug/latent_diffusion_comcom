@@ -68,4 +68,4 @@ model:
       target: ldm.modules.encoders.modules.BERTEmbedder
       params:
         n_embed: 1280
-        n_layer: 28
+        n_layer: 30
